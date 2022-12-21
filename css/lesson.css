@@ -1,0 +1,14 @@
+.btn {
+min-width: 160px;
+min-height: 40px;
+text-transform: uppercase;
+color: red;
+
+background-color: blue;
+}
+
+
+.btn:hover ,
+.btn:focus {
+
+}
