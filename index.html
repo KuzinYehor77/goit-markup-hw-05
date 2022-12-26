@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 4.1</title>
+  <title>Module 5.1</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
         <a href="./index.html" class="logo"><span class="logo studio">Web</span>Studio</a>
 
         <ul class="header-list">
-          <li class="list-item"><a class="header-link studio-link" href="./index.html">Studio</a></li>
+          <li class="list-item"><a class="studio-link" href="./index.html">Studio</a></li>
           <li class="list-item"><a class="header-link" href="./portfolio.html">Portfolio</a></li>
           <li class="list-item"><a class="header-link" href="#">Contacts</a></li>
         </ul>
@@ -52,7 +52,7 @@
     <section class="hero">
       <div class="container hero-container">
         <h1 class="title">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-btn">Order Service</button>
+        <button type="button" class="hero-btn" data-modal-open>Order Service</button>
       </div>
     </section>
 
@@ -333,6 +333,8 @@
         </ul>
     </section>
 
+   
+
 
   </main>
 
@@ -378,8 +380,24 @@
           </li>
         </ul>
       </div>
-    </div>
+
   </footer>
+
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <buttom data-modal-close class="modal-btn">
+        <svg class="modal-icon">
+          <use href="./images/icons.svg#closer">
+        </svg>
+      </buttom>
+    </div>
+  </div>
+
+
+  <script src="./modal.js"></script>
+   
+
 </body>
 
 </html>
