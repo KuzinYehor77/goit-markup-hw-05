@@ -89,25 +89,6 @@ body {
 	margin-left: 40px;
 }
 
-.header-link::after {
-	position: absolute;
-	top: 63px;
-	left: 0;
-
-	content: "";
-	width: 100%;
-	height: 4px;
-
-	background-color: var(--primary-brand);
-	border-radius: 2px;
-
-	transform: scaleX(0);
-	transition: transform 250ms var(--time-function);
-}
-
-.header-link:hover::after {
-	transform: scaleX(1);
-}
 
 .list-item:first-child {
 	margin-left: 0px;
@@ -628,14 +609,15 @@ body {
 	border: 1px solid var(--cornflower);
 
 	transition: color 250ms var(--time-function),
-	background-color 250ms var(--time-function);
+	background-color 250ms var(--time-function),
+	border-color 250ms var(--time-function);
 }
 
 .filters:hover,
 .filters:focus {
 	color: var(--light);
 	background-color: var(--primary-brand);
-	border: var(--primary-brand);
+	border-color: var(--primary-brand);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -711,7 +693,7 @@ body {
 	content: "";
 	width: 100%;
 	height: 100%;
-	background-color: rgba(77, 90, 229, 0.9);
+	background-color: var(--primary-brand);
 
 	transform: translateY(100%);
 	transition: transform 250ms var(--time-function);
@@ -797,6 +779,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 
 	border-radius: 50%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
